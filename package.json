@@ -1,0 +1,33 @@
+{
+  "name": "a17-typescript-node-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/express": "^4.0.36",
+    "@types/node": "^8.0.16",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "generate-pincode": "^4.0.0",
+    "helmet": "^3.8.0",
+    "moment": "^2.18.1",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "pg-promise": "^6.3.5",
+    "pug": "^2.0.0-rc.2",
+    "qr-image": "^3.2.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "rimraf": "^2.6.1",
+    "sendgrid": "^5.2.0",
+    "typescript": "^2.4.2"
+  },
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "start": "npm-run-all clean watch:build watch:server --print-label",
+    "build": "tsc",
+    "run:server": "node './dist/web'"
+  }
+}
